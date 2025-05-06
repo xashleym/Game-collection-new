@@ -2,6 +2,8 @@ import os
 
 PROGRAM_NAME = "Game Collection Manager Microservice"
 VERSION = "v1.2"
+TAGLINE = "Manage your game collection and wishlist instantly, privately, and for free."
+
 COLLECTION_FILE = 'game_collection.txt'
 WISHLIST_FILE = 'wishlist.txt'
 
@@ -11,7 +13,7 @@ ABOUT_TEXT = f"""
 This script demonstrates inter-process communication using text files as a
 communication pipe between microservices. It lets you add, view, and manage (remove) games
 in a shared collection or wishlist. There are no advertisements, subscriptions, or monetary 
-costs—this program is completely free..
+costs—this program is completely free.
 """
 
 HELP_TEXT = f"""
@@ -115,7 +117,7 @@ def manage_wishlist():
 ### Main Menu ###
 
 def main_menu():
-    print(f"\n{'='*40}\n{PROGRAM_NAME} {VERSION}\n{'='*40}")
+    print(f"\n{'='*40}\n{PROGRAM_NAME} {VERSION}\n{TAGLINE}\n{'='*40}")
     while True:
         print("\nMain Menu - enter a command or number:")
         print("  1. view     - View/manage collection")
