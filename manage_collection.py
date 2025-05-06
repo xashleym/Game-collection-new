@@ -10,7 +10,8 @@ ABOUT_TEXT = f"""
 
 This script demonstrates inter-process communication using text files as a
 communication pipe between microservices. It lets you add, view, and manage (remove) games
-in a shared collection or wishlist. There is no web interface or database.
+in a shared collection or wishlist. There are no advertisements, subscriptions, or monetary 
+costs—this program is completely free..
 """
 
 HELP_TEXT = f"""
