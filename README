@@ -1,0 +1,39 @@
+This project is a simple Python command-line interface (CLI) application for managing tasks stored in a plain text file (`tasks.txt`). It reads, sorts, adds, and deletes tasks.
+It simulates a basic interaction where a script acts as a client accessing data from a file that represents a data source (like a Task Service's data).
+## Features
+*   Read/parse tasks from `tasks.txt` (handling valid/invalid lines).
+*   Sort tasks chronologically (date, untimed before timed, then time).
+*   Display sorted tasks.
+*   Interactive add/delete tasks.
+*   Save changes back to `tasks.txt`.
+*   Includes unit tests using `pytest` and `unittest.mock`.
+
+## Prerequisites
+*   Python 3.6+
+
+## Setup
+
+1.  **Create Directory:** `mkdir python_sort_demo && cd python_sort_demo`
+2.  **Create Files:** Create `sort_tasks_txt.py`, `tasks.txt`, and `test_sort_tasks.py` in this directory. Paste the respective code and some sample data into `tasks.txt`.
+3.  **Install Dependencies:**
+    ```bash
+    pip install pytest pytest-mock
+    ```
+
+## How to Run the Script
+
+Navigate to the directory and run:
+
+```bash
+python sort_tasks_txt.py
+```
+
+Use the interactive menu to manage tasks. Changes are saved to `tasks.txt`.
+
+## How to Run the Tests
+
+Navigate to the directory and run:
+
+```bash
+pytest
+```
